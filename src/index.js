@@ -50,15 +50,15 @@
 /**
  * テンプレート文字列
  */
-const name = "しばたろう";
-const age = 9;
+// const name = "しばたろう";
+// const age = 9;
 
-従来の方法;
-const message1 = "私の名前は、" + name + "。年齢は、" + age + "才です。";
-console.log(message1);
-テンプレート文字列を使った方法;
-const message2 = `私の名前は、${name}。年齢は${age}才です。`;
-console.log(message2);
+// 従来の方法;
+// const message1 = "私の名前は、" + name + "。年齢は、" + age + "才です。";
+// console.log(message1);
+// テンプレート文字列を使った方法;
+// const message2 = `私の名前は、${name}。年齢は${age}才です。`;
+// console.log(message2);
 
 /**
  * アロー関数
@@ -82,7 +82,7 @@ console.log(message2);
 // const func3 = (num1,num2) => {
 //   return num1+num2;
 // }
-//簡略な書き方
+// //簡略な書き方
 // const func3 = (num1, num2) => num1 + num2;
 // console.log(func3(10, 12));
 
@@ -95,7 +95,7 @@ console.log(message2);
 // };
 //普通の書き方
 // const message1 = `私の名前は${myProfile.name}です。年は${myProfile.age}才です。`;
-//
+
 //分割代入
 // const { name, age } = myProfile;
 // const message2 = `私の名前は${name}です。年は${age}才です。`;
@@ -173,7 +173,7 @@ console.log(message2);
 // });
 // console.log(newNumArr);
 
-const nameArr = ["田中", "山田", "林"];
+// const nameArr = ["田中", "山田", "林"];
 //従来の書き方
 // for (let index = 0; index < nameArr.length; index++) {
 //   console.log(`${index + 1}番目は${nameArr[index]}さんです。`);
@@ -182,11 +182,11 @@ const nameArr = ["田中", "山田", "林"];
 // nameArr.map((name, index) =>
 //   console.log(`${index + 1}番目は${name}さんです。`)
 // );
-const newNameArr = nameArr.map((name) => {
-  if (name === "林") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(newNameArr);
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "林") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr);
