@@ -190,3 +190,58 @@
 //   }
 // });
 // console.log(newNameArr);
+
+/**
+ * 三項演算子　条件  ? 条件がtrueのときの処理 : 条件がfalseのときの処理
+ */
+
+// const val1 = 1 > 0 ? "trueです。" : "falseです。";
+// console.log(val1); // trueです
+
+// const val2 = 1 < 0 ? "trueです。" : "falseです。";
+// console.log(val2); //falseです
+// const num = "1300";
+// console.log(num.toLocaleString());
+// const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください。';
+// console.log(formattedNum);
+//条件式のような使い方ができる
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています" : "許容範囲内です";
+// };
+// console.log(checkSum(50, 60));//100を超えています
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています" : "許容範囲内です";
+// };
+// console.log(checkSum(50, 40));//許容範囲内です
+
+/**
+ * 論理演算子の本当の意味を知ろう　&&（かつ） ||（または）なのか？
+ */
+// const flag1 = true;
+// const flag2 = false;
+// if (flag1 || flag2) {
+//   console.log("1か2はtrueになります");
+// flag1がtrueなので、1か2はtrueになりますがtrueなため、表示される
+// }
+// const flag1 = true;
+// const flag2 = true;
+// if (flag1 && flag2) {
+//   console.log("1も2もtrueになります");
+// }
+//flag1、flag2が両方trueならtrueなので1も2もtrueになりますが表示される。
+//どちらかがfalseであればfalse判定となり表示されない。
+
+/** ||は、左側がfalse判定されるとき、右側を返す */
+// const num = null;
+// const fee = num || "金額未設定です";
+// console.log(fee);
+// const num = 100;
+// const fee = num || "金額未設定です";
+// console.log(fee);
+/** &&は、左側がtrue判定されるとき、右側を返す */
+// const num2 = 100;
+// const fee2 = num2 && "何か設定されました";
+// console.log(fee2);
+// const num2 = null;
+// const fee2 = num2 && "何か設定されました";
+// console.log(fee2);
